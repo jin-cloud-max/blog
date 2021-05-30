@@ -6,24 +6,24 @@ import commonStyles from '../../styles/common.module.scss';
 import styles from './post.module.scss';
 
 interface Post {
-  first_publication_date: string | null;
-  data: {
-    title: string;
-    banner: {
-      url: string;
-    };
-    author: string;
-    content: {
-      heading: string;
-      body: {
-        text: string;
+   first_publication_date: string | null;
+   data: {
+      title: string;
+      banner: {
+         url: string;
+      };
+      author: string;
+      content: {
+         heading: string;
+         body: {
+            text: string;
+         }[];
       }[];
-    }[];
-  };
+   };
 }
 
 interface PostProps {
-  post: Post;
+   post: Post;
 }
 
 // export default function Post() {
